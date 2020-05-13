@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Forms and Input</title>
+        <meta name="description" content="A basic page documenting HTML Forms and Inputs">
+    </head>
+    <body>
+        <!-- HTML Form -->
+        <!-- The 'action' attribute defines where the form will be submitted -->
+        <form action="receive_data.php">
+            <!-- Separate each label/input of the field use the 'div' (divider) tag -->
+            <div>
+                <!-- The label is connected to the input field that shares its 'for' attribute -->
+                <!-- The input tag's 'id' attribute determines to which label it will be linked -->
+                <!-- We  can see on the webpage which input field is linked to which label by clicking on the label and seeing which input field lights up -->
+                <!-- The 'text' type is simply for input text-->
+                <!-- The 'name' attribute will be the key for that value, within the database -->
+                <!-- We can add a placeholder for the input by adding the 'placeholder' attribute -->
+                <label for="fname">First Name</label>
+                <input type="text" name="fname" id="fname" placeholder="Enter your first name">
+            </div>
+            <div>
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" id="lname" placeholder="Enter your first name">
+            </div>
+            <div>
+                <!-- The 'email' type has some validation client-side, meaning the user must enter a valid email format for it to be accepted by the form -->
+                <label for="email1">Email 1</label>
+                <input type="email" name="email1" id="email1" placeholder="Enter your first email">
+            </div>
+            <div>
+                <label for="email2">Email 2</label>
+                <input type="email" name="email2" id="email2" placeholder="Enter your second email">
+            </div>
+            <div>
+                <!-- Here we use not an input tag, but a 'textarea' one, for obtaining a larger string of text -->
+                <!-- Note that the textarea is still linked to the label through the use of the id tag -->
+                <!-- We can also define the width and height of the textarea through the cols and rows attributes, respectively -->
+                <label for="message2">Message 1</label>
+                <textarea name="message1" id="message1"
+                 cols="40" rows="5"></textarea>
+            </div>
+            <div>
+                <label for="message2">Message 2</label>
+                <textarea name="message2" id="message2" 
+                cols="40" rows="5"></textarea>
+            </div>
+            <div>
+                <!-- The select tag takes options to be nested within, the value attribute is what will be stored in the form data -->
+                <!-- Adding the 'selected' keyword means that this option is automatically selected when loading/reloading the page -->
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender">
+                    <option value="female" selected>Female</option>
+                    <option value="male">Male</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div>
+                <label for="hair_length">Hair Length</label>
+                <select name="hair_length" id="hair_length">
+                    <option value="none">None</option>
+                    <option value="short">Short</option>
+                    <option value="medium">Medium</option>
+                    <option value="long">Long</option>
+                </select>
+            </div>
+            <div>
+                <!-- The number type allows for numbers and the letter 'e' (for 'exponential') only -->
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age">
+            </div>
+            <div>
+                <label for="meal_num">Number of Meals Eaten Per Day</label>
+                <input type="number" name="meal_num" id="meal_num">
+            </div>
+            <div>
+                <!-- the date type allows you to select a date, eithre from a calenda or straight from the input -->
+                <label for="birthdate">Birthdate</label>
+                <input type="date" name="birthdate" id="birthdate">
+            </div>
+            <div>
+                <label for="death_prediction">Predicted Death Date</label>
+                <input type="date" name="death_prediction" id="death_prediction">
+            </div>
+            <div>
+                <!-- Only one radio tag per id can be selected -->
+                <!-- We segment radios as such, different than the select list because here we want to display each option separately -->
+                <!-- As with the select list, we can also pre-select an option with the, this time with the 'checked' option -->
+                <label for="membership">Gym Membership:</label><br>
+                <input type="radio" name="membership" id="membership" value="bronze">Bronze
+                <input type="radio" name="membership" id="membership" value="silver">Silver
+                <input type="radio" name="membership" id="membership" value="gold" checked>Gold
+                <input type="radio" name="membership" id="membership" value="platinum">Platinum
+            </div>
+            <div>
+                <label for="hobbies">My Hobbies...</label><br>
+                <input type="checkbox" name="hobbies" id="hobbies" value="writing">Writing
+                <input type="checkbox" name="hobbies" id="hobbies" value="programming">Programming
+                <input type="checkbox" name="hobbies" id="hobbies" value="fishing">Fishing
+                <input type="checkbox" name="hobbies" id="hobbies" value="cooking">Cooking
+            </div>
+            <!-- Input Submit -->
+            <input type="submit" value="Submit">
+            <!-- Button Submit -->
+            <!-- <button type="submit">Submit</button> -->
+            <button type="reset">Reset</button>
+        </form>
+    </body>
+</html>

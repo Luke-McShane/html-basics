@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Lists and Tables</title>
+        <meta name="description" content="A page for learning HTML Lists and Tables">
+    </head>
+    <body>
+        <!-- Unordered Lists -->
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+
+        <hr>
+        <hr>
+
+        <!-- Ordered Lists -->
+        <ol type="1">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ol>
+        <hr>
+        <ol type="A">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ol>
+        <hr>
+        <ol type="a">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ol>
+        <hr>
+        <ol type="I">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ol>
+        <hr>
+        <ol type="i">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ol>
+
+        <hr>
+        <hr>
+
+        <!-- Nested Lists -->
+        <ol type="1">
+            <li>Item 1
+                <ol type="A">
+                    <li>Nested Item A</li>
+                    <li>Nested Item B</li>
+                </ol>
+            </li>
+            <li>Item 2
+                <ol type="a">
+                    <li>Nested Item a</li>
+                    <li>Nested Item b</li>
+                </ol>
+            </li>
+            <li>Item 3
+                <ol type="I">
+                    <li>Nested Item I</li>
+                    <li>Nested Item II</li>
+                </ol>
+            </li>
+            <li>Item 4
+                <ol type="i">
+                    <li>Nested Item i</li>
+                    <li>Nested Item ii</li>
+                </ol>
+            </li>
+        </ol>
+
+        <hr>
+        <hr>
+
+        <!-- Tables - Only used for tabular data -->
+        <table>
+            <!-- The headings for the table - the part that goes across the top - the headings -->
+            <thead>
+                <!-- Put the headings in a Table Row -->
+                <tr>
+                    <!-- Ensure they're headings by using the Table Header/Heading tag -->
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <!-- Place all data in the Table Body, as respective to the Table Headings -->
+            <tbody>
+                <!-- Use the Table Row tag to create a new row in the Table Body -->
+                <tr>
+                    <!-- Please each data point (equivalent to a table cell) inside a Table Data tag -->
+                    <td>Luke</td>
+                    <td>McShane</td>
+                    <td>lukejsmcshane@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Ben</td>
+                    <td>Simmons</td>
+                    <td>bsimons@hotmail.com</td>
+                </tr>
+                <tr>
+                    <td>George</td>
+                    <td>Bating</td>
+                    <td>gbating@live.co.uk</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Country</th>
+                    <th>Favourite Food</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Steve</td>
+                    <td>Wales</td>
+                    <td>Apples</td>
+                </tr>
+                <tr>
+                    <td>Michael</td>
+                    <td>Spain</td>
+                    <td>Basking Shark</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

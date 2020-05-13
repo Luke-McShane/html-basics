@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Divs, Spans, Ids, and Classes</title>
+        <meta name="description" content="A basic page documenting HTML IDs and Classes">
+        <style>
+            .card {
+                border: 1px solid green;
+                margin-bottom: 20px;
+                background-color: lightgray;
+                padding: 20px;
+            }
+            .emphasize {
+                background-color: black;
+                color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- IDs should be used for only a single tag. They should be unique -->
+        <!-- Classes can be used to group elements together so they may be styled in groups -->
+        <!-- While a div is a block-line element, a span is inline, so anything contained within will not be knocked to a new line -->
+        <!-- You only want to be using the span tag to style and group inline elements -->
+        <div class="header" id="card">
+            <h1>My Header</h1>
+        </div>
+        <ul class="card" id="main-nav">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <div id="about" class="card">
+            <h3>About Me</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span class="emphasize">Ipsam omnis necessitatibus sint a quibusdam facere illum impedit, perferendis, blanditiis quia et sed. </span>Aspernatur in laborum nobis distinctio nostrum pariatur, veniam ad, laudantium est praesentium fuga sit molestias ea accusantium ducimus nisi ipsum voluptate, dicta nihil optio dolore? Incidunt, perferendis doloremque?</p>
+        </div>
+        <div id="footer" class="card">
+            <h3>Footer</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <div class="emphasize">Omnis sint hic corporis natus animi voluptates earum explicabo facere, temporibus nam? Odit deserunt libero obcaecati reprehenderit minus voluptate atque id beatae iusto, facere accusantium illum!</div>Harum eius, ab totam consequuntur expedita reiciendis dolor, temporibus, laboriosam a animi sit? Ex, natus? Totam magni voluptates mollitia temporibus doloribus eius ratione placeat unde iure, eaque tempore quam, ipsa ipsum id perspiciatis recusandae optio iste?</p>
+        </div>
+    </body>
+</html>

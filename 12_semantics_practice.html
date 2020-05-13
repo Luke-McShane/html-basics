@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Semantics Practice</title>
+    <meta name="description" content="Some practice to further understand HTML5 semantics" />
+    <style>
+      /*
+        box-sizing determines how the element's width/height is calculated. 'content-box' means that any padding and margin is added onto the original
+        width of the item, whereas 'border-box' takes this padding and margin into consideration when calculating the width. So if we say the width is
+        100px, then the margin and padding will be included in this value in the border-box value, whereas the margin and padding will be added on top
+        of the 100px with the content-box value.
+      */
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.4;
+        color: #333'
+      }
+      .card {
+        border: 1px solid black;
+        background-color: lightgray;
+        padding: 20px;
+        margin-bottom: 10px;
+      }
+      .central {
+        text-align: center;
+      }
+      .clr {
+        clear: both;
+      }
+    #header {
+      margin-bottom: 15px;
+      padding: 10px;
+      background-color: black;
+      color: white;
+    }
+     #footer {
+        border: 1px solid black;
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+      #main {
+        float: left;
+        width: 69%;
+      }
+      #nav {
+        float: right;
+        width: 29%;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <h1>Welcome to my Website</h1>
+      <p>Please enjoy scouring around this site of absolute abundance and opportunity</p>
+    </header> 
+    <main id="main">
+      <section class="central">
+        <h3>So this is like the first section of the main part of the page, ya dig?</h3>
+        <p>And here we'll find all sorts of cool stuff, like Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque doloribus odio labore aperiam mollitia omnis numquam hic iste in, placeat facilis perferendis aspernatur quo commodi ab dignissimos, expedita quaerat officia cumque fugiat tempora! Doloremque, iure animi. Aspernatur doloremque debitis quod placeat id dolor, animi autem molestiae voluptatibus veritatis, corporis possimus?
+        </p>
+      </section>
+      <section>
+        <article class="card">
+          <h3>This is my first article, enclosed within an article tag, of course.</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, perspiciatis! Accusamus laboriosam non expedita sed eveniet fuga, quasi at ab delectus esse, officiis nesciunt quisquam porro molestiae ipsa dignissimos quibusdam maiores? Aut eveniet dolor sequi quaerat beatae accusantium maxime. Recusandae eius dolor, laudantium porro incidunt quod odit cumque maxime. Et?</p>
+        </article>
+        <article class="card">
+          <h3>And who would've guessed - a second article!</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur magnam unde adipisci labore nesciunt? Consectetur quas, non numquam maiores voluptatum officia! Assumenda mollitia similique accusamus culpa voluptate quae, eum, facilis odio dolorum quisquam unde dolore cupiditate accusantium laudantium praesentium quibusdam? Iure sapiente recusandae debitis veritatis blanditiis consectetur eveniet dicta magni?</p>
+        </article>
+      </section>
+    </main>
+    <aside id="nav">
+      <nav class="card">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Chicken Korma</a></li>
+        </ul>
+      </nav>
+      <br>
+      <nav class="card">
+        <h3>Other Fantastic Stuff</h3>
+        <ul>
+          <li><a href="#">Shindigs</a></li>
+          <li><a href="#">Leprechauns</a></li>
+          <li><a href="#">Zeppelins</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <!-- The 'clear' attribute (check the class styling for 'clr' above) means that this element will be pushed under any floated elements above it.
+        So, here, this div will be pushed under both left and right floated elements. If we set the 'clear' property to 'left', then this div would only
+        be pushed under the elements above it that have been floated left, and vice-versa with the 'right'-floated elements. -->
+    <!-- <div class="clr"></div> -->
+    <footer id="footer" class="clr">
+      <h3>Copyright &copy; Luke's Super Professional Website 2020</h3>
+    </footer>
+  </body>
+</html>
